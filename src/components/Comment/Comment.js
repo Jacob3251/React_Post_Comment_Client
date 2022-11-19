@@ -50,17 +50,18 @@ const Comment = ({ post }) => {
       </form>
       <div
         style={{
-          backgroundColor: "lightblue",
+          backgroundColor: "lightsalmon",
+          borderRadius: "10px",
           padding: "4px 10px",
           margin: "10px 0",
         }}
       >
-        <p>{comment.length}</p>
+        {comment.length === 0 && <p>No comments yet</p>}
         {comment.reverse().map((item) => (
           <div
             style={{
-              margin: "5px 0",
-              backgroundColor: "blue",
+              margin: "10px 0",
+              backgroundColor: "lightcoral",
               padding: "8px",
               borderRadius: "8px",
             }}

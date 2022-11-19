@@ -26,8 +26,8 @@ const AddUser = () => {
     event.target.reset();
   };
   return (
-    <div>
-      <h1>Add an user from here</h1>
+    <div style={{ width: "60%", margin: "0 auto" }}>
+      <h1>Add a post from here</h1>
       <form
         onSubmit={handleAddUser}
         style={{
@@ -42,19 +42,34 @@ const AddUser = () => {
           name="title"
           required
           placeholder="Enter title"
-          style={{ margin: "10px 50px", padding: "5px 0", width: "80%" }}
+          style={{
+            margin: "10px 50px",
+            paddingLeft: "10px",
+            height: "25px",
+            width: "100%",
+          }}
         />
         <input
           type="text"
           name="content"
           required
           placeholder="Enter content"
-          style={{ margin: "10px 50px", padding: "5px 0", width: "80%" }}
+          style={{
+            margin: "10px 50px",
+            paddingLeft: "10px",
+            height: "25px",
+            width: "100%",
+          }}
         />
         <input
           type="submit"
           value="Submit"
-          style={{ margin: "10px 50px", padding: "5px 0", width: "80%" }}
+          style={{
+            margin: "10px 40px",
+
+            height: "35px",
+            width: "101%",
+          }}
         />
       </form>
     </div>

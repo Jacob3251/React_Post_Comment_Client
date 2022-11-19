@@ -46,9 +46,9 @@ const Post = ({ post }) => {
       style={{
         width: "60%",
         backgroundColor: "salmon",
-        padding: "20px 10px",
+        padding: "20px 50px",
         textAlign: "left",
-
+        borderRadius: "10px",
         margin: "10px auto",
       }}
     >
@@ -61,7 +61,16 @@ const Post = ({ post }) => {
           <button>Like</button>
           <button onClick={() => setShowComment(!showComment)}>Comment</button>
         </div>
-        <div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <p style={{ color: "white", marginRight: "10px" }}>
+            {post.comment.length} comments
+          </p>
           <button onClick={() => setShowOptions(!showOptions)}>Options</button>
           {showOptions && (
             <div>
